@@ -50,7 +50,7 @@ networks:
 volumes:
   elasticsearch-data:
 ```
-* Then, run the docker compose command in the docker folder to Run the containers. `docker-compose up -d`
+* Then, run the docker compose command in the docker folder to Run the containers with this command. `docker-compose up -d`
 ![alt text](https://i.imgur.com/smWQF2i.png) 
 * The first time you run the `docker-compose` command, it will download the images for ElasticSearch and Kibana from the docker registry, so it might take a few minutes depending on your connection speed. 
 * Once you've run the `docker-compose` up command, check that ElasticSearch and Kibana are up and running.

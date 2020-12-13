@@ -242,8 +242,3 @@ using Microsoft.Extensions.Logging;
 
 ### Ta-Da !! Finally you will show your log on Kibana Dashboard
 ![alt-text](https://i.imgur.com/miTdlWk.png)
-
-
-## Project Link 
-
-Project Link: https://dev.azure.com/tonmoyrudra1/SAP_CPI_INTERGATION_API 

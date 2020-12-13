@@ -211,6 +211,30 @@ public static IHostBuilder CreateHostBuilder(string[] args) =>
 * You can now view the logs by clicking the `Discover` on Kivana Section in the navigation pane.
 **Congratulations!! You are almost done 90% task.** 
 
-
-
-
+## Logging Custom Messages On Your API Project
+Now we add our custome log in `controller` file. (as a example)
+* Add a using statement
+``` 
+using Microsoft.Extensions.Logging;
+``` 
+* Then, inject an instance of ILogger with constructor injection.
+```
+ public class DepartmentController : ControllerBase
+    {
+        private readonly ILogger<DepartmentController> _logger;
+        public DepartmentController(ILogger<DepartmentController> logger)
+            {
+                _logger = logger;
+            }
+    }
+```
+* Then add a custome log on your method.
+```
+        [HttpGet("GetAll")]
+        [Authorize]
+        public ActionResult <IEnumerable<Departments>> Get()
+        {
+            _logger.LogInformation("Get all Department API call by - {claims} ", User.Claims);
+            return Ok(_repo.GetDepartments());
+        }
+```

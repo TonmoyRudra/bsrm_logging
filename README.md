@@ -238,3 +238,6 @@ using Microsoft.Extensions.Logging;
             return Ok(_repo.GetDepartments());
         }
 ```
+
+### Ta-Da !! Finally you will show your log on Kibana Dashboard
+![alt-text](https://i.imgur.com/miTdlWk.png)

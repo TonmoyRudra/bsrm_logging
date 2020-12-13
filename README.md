@@ -53,3 +53,20 @@ volumes:
 * The first time you run the `docker-compose` command, it will download the images for ElasticSearch and Kibana from the docker registry, so it might take a few minutes depending on your connection speed. 
 * Once you've run the `docker-compose` up command, check that ElasticSearch and Kibana are up and running.
 * Verify that Elasticsearch is up and running to Navigate to http://localhost:9200 
+![alt text](https://i.imgur.com/w1MDZXS.png) 
+* Verify that Kibana is up and running to Navigate to http://localhost:5601 
+![alt text](https://i.imgur.com/j6AGKEW.png) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

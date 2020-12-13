@@ -1,5 +1,5 @@
 # A Step by Step Guide to Logging with ElasticSearch, Kibana, ASP.NET Core 3.1 and Docker
-###### Published March 28, 2020
+###### Published December 13, 2020
 ###### Author: TONMOY RUDRA
 
 ## Docker 
@@ -49,7 +49,8 @@ networks:
 volumes:
   elasticsearch-data:
 ```
-* Then, run the docker compose command in the docker folder to spin up the containers. `docker-compose up -d`
+* Then, run the docker compose command in the docker folder to Run the containers. `docker-compose up -d`
+![alt text](https://i.imgur.com/smWQF2i.png) 
 * The first time you run the `docker-compose` command, it will download the images for ElasticSearch and Kibana from the docker registry, so it might take a few minutes depending on your connection speed. 
 * Once you've run the `docker-compose` up command, check that ElasticSearch and Kibana are up and running.
 * Verify that Elasticsearch is up and running to Navigate to http://localhost:9200 
@@ -193,3 +194,16 @@ public static IHostBuilder CreateHostBuilder(string[] args) =>
                 })
                 .UseSerilog();
 ```
+##### All setup done. Now Run your application. It will create a Data Set 
+## Launching Kibana
+* Let's open up Kibana at http://localhost:5601 so that we can view the logs. Once Kibana loads, you'll be presented with the default page
+![alt-text](https://i.imgur.com/GmhcVmU.png)
+
+### Create an Index Pattern in Kibana to Show Data
+
+
+
+
+
+
+

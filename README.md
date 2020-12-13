@@ -200,9 +200,16 @@ public static IHostBuilder CreateHostBuilder(string[] args) =>
 ![alt-text](https://i.imgur.com/GmhcVmU.png)
 
 ### Create an Index Pattern in Kibana to Show Data
-
-
-
+* Kibana won't show any logs just yet. You have to specify an index before you can view the logged data. To do this, Click on `Stack Management`
+![alt-text](https://i.imgur.com/HuUUZdO.png)
+* Now click `Index Patterns` on Kibana section
+![alt-text](https://i.imgur.com/IKCQkwo.png)
+* Then, click `Create Index Pattern` and type in an index pattern. It will show the index pattern that was just created. You can type in the entire index, or use wildcards as shown below.
+![alt-text](https://i.imgur.com/NOXoBxR.png)
+* On the next page, select the @timestamp field as the time filter field name and click the Create index pattern button.
+![alt-text](https://i.imgur.com/wuT8ckH.png)
+* You can now view the logs by clicking the `Discover` on Kivana Section in the navigation pane.
+**Congratulations!! You are almost done 90% task.** 
 
 
 

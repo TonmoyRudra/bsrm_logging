@@ -10,7 +10,7 @@
 
 ### Create a docker-compose file & Run it
 * Create a folder name `docker` on your project directory
-* Then, Create a `docker-composer.yml` file on `docker` folder and Copy and Paste the below code.
+* Then, Create a `docker-compose.yml` file on `docker` folder and Copy and Paste the below code.
 ```
 version: '3.1'
 
